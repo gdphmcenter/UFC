@@ -10,3 +10,4 @@ data_util：对数据进行处理，此处包括构造插值实例
 train：训练网络 
 experience：验证网络 
 requirement：环境配置和所需要的库包
+test_pyod：使用pyod异常检测库做对比
