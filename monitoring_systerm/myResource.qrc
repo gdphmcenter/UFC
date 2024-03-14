@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>resource/频域.png</file>
+    <file>resource/时域.png</file>
+    <file>resource/红绿灯.png</file>
+    <file>resource/tsne.png</file>
+  </qresource>
+</RCC>

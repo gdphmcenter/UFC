@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1014</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="widget_title" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(68,114,196)</string>
+    </property>
+    <widget class="QLabel" name="lab_divide">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>75</y>
+       <width>1024</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(47, 85, 151)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lab_title">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>0</y>
+       <width>781</width>
+       <height>75</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 18pt &quot;微软雅黑&quot; ;color:white;</string>
+     </property>
+     <property name="text">
+      <string>XXX公司--3D打印机传动系统在线监测平台</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget_main">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>100</y>
+      <width>861</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="widget_main">
+     <widget class="QTextBrowser" name="textBrowser">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>310</y>
+        <width>571</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">     QPushButton{
+     background-color:rgba(112,173,71,200);
+     border-style:outset;
+     border-width:4px;
+     border-radius:10px;
+     border-color:rgba(255,255,255,30);
+     font:bold 20px;
+     color:rgba(0,0,0,200);
+     padding:6px;
+     }
+
+     QPushButton:pressed{
+     background-color:rgba(112,173,71,200);
+     border-color:rgba(255,255,255,30);
+     border-style:inset;
+     color:rgba(0,0,0,200);
+     }
+
+     QPushButton:hover{
+     background-color:rgba(112,173,71,200);
+     border-color:rgba(255,255,255,200);
+     color:rgba(0,0,0,100);
+     }</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;运行日志：&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:00:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;运行正常&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:01:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;运行正常&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:02:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;运行正常&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:03:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;运行正常&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:05:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;检测到故障，待维修处理&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:06:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;已停机&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:07:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;已停机&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:08:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;已停机&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:09:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;已停机&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Calibri'; font-size:12pt; color:#000000;&quot;&gt;[2024-01-03 15:10:00]&lt;/span&gt;&lt;span style=&quot; font-family:'等线'; font-size:12pt; color:#000000;&quot;&gt;已停机&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_status" native="true">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>0</y>
+        <width>281</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid rgb(0,0,0) </string>
+      </property>
+      <widget class="QGroupBox" name="groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>261</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <widget class="QTextBrowser" name="text_status">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>50</y>
+          <width>231</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;
+background-color: rgb(225, 225, 225);</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'等线'; font-size:11pt; color:#000000;&quot;&gt;机台编号：A1#&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'等线'; font-size:11pt; color:#000000;&quot;&gt;运行状态：运行故障&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'等线'; font-size:11pt; color:#000000;&quot;&gt;处理情况：待处理&lt;/span&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>170</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
+        </property>
+        <property name="text">
+         <string>内圈故障</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>200</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
+        </property>
+        <property name="text">
+         <string>外圈故障</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>230</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
+        </property>
+        <property name="text">
+         <string>滚动体故障</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_start_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>0</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>16</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 69, 72);</string>
+        </property>
+        <property name="text">
+         <string>机台报警信息</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>190</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Arabic</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(225, 225, 225);</string>
+        </property>
+        <property name="text">
+         <string> 故障诊断：</string>
+        </property>
+       </widget>
+       <widget class="QCommandLinkButton" name="commandLinkButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <weight>50</weight>
+          <bold>false</bold>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
+        </property>
+        <property name="text">
+         <string>查看详情</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_button" native="true">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>310</y>
+        <width>281</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid rgb(0,0,0) </string>
+      </property>
+      <widget class="QPushButton" name="btn_importlog">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>171</y>
+         <width>158</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">     QPushButton{
+     background-color:rgba(68,114,196);
+     border-style:outset;
+     border-width:4px;
+     border-radius:10px;
+     border-color:rgba(255,255,255,30);
+     font:bold 20px;
+     color:rgba(0,0,0,200);
+     padding:6px;
+     }
+
+     QPushButton:pressed{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,30);
+     border-style:inset;
+     color:rgba(0,0,0,200);
+     }
+
+     QPushButton:hover{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,200);
+     color:rgba(0,0,0,100);
+     }</string>
+       </property>
+       <property name="text">
+        <string>日志导出</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_start">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>10</y>
+         <width>158</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">     QPushButton{
+     background-color:rgba(68,114,196);
+     border-style:outset;
+     border-width:4px;
+     border-radius:10px;
+     border-color:rgba(255,255,255,30);
+     font:bold 20px;
+     color:rgba(0,0,0,200);
+     padding:6px;
+     }
+
+     QPushButton:pressed{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,30);
+     border-style:inset;
+     color:rgba(0,0,0,200);
+     }
+
+     QPushButton:hover{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,200);
+     color:rgba(0,0,0,100);
+     }</string>
+       </property>
+       <property name="text">
+        <string>启动</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_faultdeal">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>118</y>
+         <width>158</width>
+         <height>47</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">     QPushButton{
+     background-color:rgba(68,114,196);
+     border-style:outset;
+     border-width:4px;
+     border-radius:10px;
+     border-color:rgba(255,255,255,30);
+     font:bold 20px;
+     color:rgba(0,0,0,200);
+     padding:6px;
+     }
+
+     QPushButton:pressed{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,30);
+     border-style:inset;
+     color:rgba(0,0,0,200);
+     }
+
+     QPushButton:hover{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,200);
+     color:rgba(0,0,0,100);
+     }</string>
+       </property>
+       <property name="text">
+        <string>故障处理</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_stop">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>64</y>
+         <width>158</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">     QPushButton{
+     background-color:rgba(68,114,196);
+     border-style:outset;
+     border-width:4px;
+     border-radius:10px;
+     border-color:rgba(255,255,255,30);
+     font:bold 20px;
+     color:rgba(0,0,0,200);
+     padding:6px;
+     }
+
+     QPushButton:pressed{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,30);
+     border-style:inset;
+     color:rgba(0,0,0,200);
+     }
+
+     QPushButton:hover{
+     background-color:rgba(68,114,196);
+     border-color:rgba(255,255,255,200);
+     color:rgba(0,0,0,100);
+     }</string>
+       </property>
+       <property name="text">
+        <string>停机</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>571</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="toolTipDuration">
+       <number>0</number>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="widget_current">
+       <attribute name="title">
+        <string>振动通道参数设置</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>401</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string/>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>通道号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>传感器类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>传感器灵敏度</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>测点单位</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>测点方向</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>01</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>加速度</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>g</string>
+         </property>
+        </item>
+        <item row="0" column="4">
+         <property name="text">
+          <string>x</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>02</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>加速度</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>g</string>
+         </property>
+        </item>
+        <item row="1" column="4">
+         <property name="text">
+          <string>y</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>03</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>加速度</string>
+         </property>
+        </item>
+        <item row="2" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="2" column="3">
+         <property name="text">
+          <string>g</string>
+         </property>
+        </item>
+        <item row="2" column="4">
+         <property name="text">
+          <string>z</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>04</string>
+         </property>
+        </item>
+        <item row="3" column="1">
+         <property name="text">
+          <string>角速度</string>
+         </property>
+        </item>
+        <item row="3" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="3" column="3">
+         <property name="text">
+          <string>deg/s</string>
+         </property>
+        </item>
+        <item row="3" column="4">
+         <property name="text">
+          <string>x</string>
+         </property>
+        </item>
+        <item row="4" column="0">
+         <property name="text">
+          <string>05</string>
+         </property>
+        </item>
+        <item row="4" column="1">
+         <property name="text">
+          <string>角速度</string>
+         </property>
+        </item>
+        <item row="4" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="4" column="3">
+         <property name="text">
+          <string>deg/s</string>
+         </property>
+        </item>
+        <item row="4" column="4">
+         <property name="text">
+          <string>y</string>
+         </property>
+        </item>
+        <item row="5" column="0">
+         <property name="text">
+          <string>06</string>
+         </property>
+        </item>
+        <item row="5" column="1">
+         <property name="text">
+          <string>角速度</string>
+         </property>
+        </item>
+        <item row="5" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="5" column="3">
+         <property name="text">
+          <string>deg/s</string>
+         </property>
+        </item>
+        <item row="5" column="4">
+         <property name="text">
+          <string>z</string>
+         </property>
+        </item>
+        <item row="6" column="0">
+         <property name="text">
+          <string>07</string>
+         </property>
+        </item>
+        <item row="6" column="1">
+         <property name="text">
+          <string>角度</string>
+         </property>
+        </item>
+        <item row="6" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="6" column="3">
+         <property name="text">
+          <string>deg</string>
+         </property>
+        </item>
+        <item row="6" column="4">
+         <property name="text">
+          <string>x</string>
+         </property>
+        </item>
+        <item row="7" column="0">
+         <property name="text">
+          <string>08</string>
+         </property>
+        </item>
+        <item row="7" column="1">
+         <property name="text">
+          <string>角度</string>
+         </property>
+        </item>
+        <item row="7" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="7" column="3">
+         <property name="text">
+          <string>deg</string>
+         </property>
+        </item>
+        <item row="7" column="4">
+         <property name="text">
+          <string>y</string>
+         </property>
+        </item>
+        <item row="8" column="0">
+         <property name="text">
+          <string>09</string>
+         </property>
+        </item>
+        <item row="8" column="1">
+         <property name="text">
+          <string>角度</string>
+         </property>
+        </item>
+        <item row="8" column="2">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </item>
+        <item row="8" column="3">
+         <property name="text">
+          <string>deg</string>
+         </property>
+        </item>
+        <item row="8" column="4">
+         <property name="text">
+          <string>z</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>30</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>采样频率</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>30</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1500</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>70</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>采样点数</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>70</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1024</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>110</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>低通滤波</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_3">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>110</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>500</number>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_4">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>210</y>
+          <width>41</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>3</number>
+        </property>
+        <property name="stepType">
+         <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>210</y>
+          <width>51</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>小时</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>179</y>
+          <width>120</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>定时存储时间</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_voltage">
+       <attribute name="title">
+        <string>图形化总体监测</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>551</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>3D打印机传动系统各通道传感器信号监测</string>
+        </property>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>X轴加速度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>3</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>40</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Y轴加速度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>2</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>40</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Z轴加速度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>4</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>40</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>X轴角速度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>40</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Y轴角速度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>3</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>40</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Z轴角速度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_7">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>2</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_9">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>150</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>X轴角度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_8">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>4</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_10">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>150</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Y轴角度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_15">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_11">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>150</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Z轴角度</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_16">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>3</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_12">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>150</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>X轴磁场</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_17">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>2</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_13">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>150</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Y轴磁场</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_18">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>5</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_14">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>150</y>
+           <width>71</width>
+           <height>91</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Z轴磁场</string>
+         </property>
+         <widget class="QSlider" name="verticalSlider_19">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>31</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="maximum">
+           <number>10</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>3</number>
+          </property>
+          <property name="tracking">
+           <bool>true</bool>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::TicksBothSides</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_load">
+       <attribute name="title">
+        <string>振动量频谱监测</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>5</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string> 波  形  图</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>-30</x>
+          <y>10</y>
+          <width>491</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="myResource.qrc">:/newPrefix/resource/OR.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>138</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string> 频  谱  图</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>-30</x>
+          <y>150</y>
+          <width>491</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="myResource.qrc">:/newPrefix/resource/OR-FFT.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>20</y>
+          <width>141</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>测点信息</string>
+        </property>
+        <widget class="QSpinBox" name="spinBox_5">
+         <property name="geometry">
+          <rect>
+           <x>85</x>
+           <y>20</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>10</number>
+         </property>
+         <property name="maximum">
+          <number>10</number>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>20</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>通道总数</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_6">
+         <property name="geometry">
+          <rect>
+           <x>85</x>
+           <y>50</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <number>3</number>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>50</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>通道选择</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>80</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>数据长度</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_7">
+         <property name="geometry">
+          <rect>
+           <x>85</x>
+           <y>80</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <number>1024</number>
+         </property>
+         <property name="value">
+          <number>1024</number>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>110</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>采样频率</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_8">
+         <property name="geometry">
+          <rect>
+           <x>85</x>
+           <y>110</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimum">
+          <number>3</number>
+         </property>
+         <property name="maximum">
+          <number>1500</number>
+         </property>
+         <property name="value">
+          <number>1500</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>170</y>
+          <width>141</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>状态指示</string>
+        </property>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>101</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="myResource.qrc">:/newPrefix/resource/红绿灯.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <zorder>label_11</zorder>
+       <zorder>label_10</zorder>
+       <zorder>pushButton_4</zorder>
+       <zorder>pushButton_6</zorder>
+       <zorder>groupBox_15</zorder>
+       <zorder>groupBox_16</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_alarm"/>
+    <widget class="QWidget" name="widget_video"/>
+    <widget class="QWidget" name="widget_online"/>
+    <widget class="QWidget" name="widget_check">
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTreeWidget" name="widget_tree">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>151</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideRight</enum>
+    </property>
+    <property name="autoExpandDelay">
+     <number>0</number>
+    </property>
+    <property name="itemsExpandable">
+     <bool>true</bool>
+    </property>
+    <property name="allColumnsShowFocus">
+     <bool>true</bool>
+    </property>
+    <attribute name="headerCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>3D打印机列表</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>A区</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>A1#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A2#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A3#打印机</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>B区</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>B1#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B2#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>B3#打印机</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>C区</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>C1#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>C2#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>C3#打印机</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>D区</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>D1#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>D2#打印机</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>D3#打印机</string>
+      </property>
+     </item>
+    </item>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myResource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
